@@ -21,21 +21,22 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Categorias</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Cuenta
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Iniciar sesion</a></li>
-                      <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                      <li><a class="dropdown-item " href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Iniciar sesion</a></li>
+                      <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModa2">Registrarse</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Ayuda</a></li>
+
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Contacto</a>
+                    <a class="nav-link disabled" aria-disabled="true">Contactos</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -45,6 +46,131 @@
               </div>
             </div>
           </nav>
+
+<!-- Modal1 -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Inicio de Sesion</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--Form-->
+        <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Correo</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">Ingrese su correo electronico (@gmail.com).</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Contraseñas</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+    <div class="form-text">Ingrese su Contraseñas.</div>
+  </div>
+</form>
+        <!--Form-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Ingresar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal2 -->
+<div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Inicio de Sesion</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--Form-->
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Tipo de documento</option>
+          <option value="1">C.C</option>
+          <option value="2">T.I</option>
+          <option value="3">PEP</option>
+        </select>
+
+        <div class="row g-3 align-items-center">
+          <div class="col-auto">
+            <label for="inputPassword6" class="col-form-label">No de Documento</label>
+          </div>
+          <div class="col-auto">
+            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+          </div>
+          <div class="col-auto">
+            <span id="passwordHelpInline" class="form-text">
+              
+            </span>
+            <div class="row">
+              <div class="col-md-6 mb-4">
+
+                <div data-mdb-input-init class="form-outline">
+                  <input type="text" id="firstName" class="form-control form-control-lg" />
+                  <label class="form-label" for="firstName">Nombres</label>
+                </div>
+
+              </div>
+              <div class="col-md-6 mb-4">
+
+                <div data-mdb-input-init class="form-outline">
+                  <input type="text" id="lastName" class="form-control form-control-lg" />
+                  <label class="form-label" for="lastName">Apellidos</label>
+                </div>
+
+              </div>
+            </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-4 pb-2">
+
+                <div data-mdb-input-init class="form-outline">
+                  <input type="email" id="emailAddress" class="form-control form-control-lg" />
+                  <label class="form-label" for="emailAddress">Email</label>
+                </div>
+
+              </div>
+              <div class="col-md-6 mb-4 pb-2">
+
+                <div data-mdb-input-init class="form-outline">
+                  <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
+                  <label class="form-label" for="phoneNumber">Numero de< Celular</label>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+
+                <select class="select form-control-lg">
+                  <option value="1" disabled>Choose option</option>
+                  <option value="2">Subject 1</option>
+                  <option value="3">Subject 2</option>
+                  <option value="4">Subject 3</option>
+                </select>
+                <label class="form-label select-label">Choose option</label>
+
+              </div>
+            </div>
+
+            <div class="mt-4 pt-2">
+              <input data-mdb-ripple-init class="btn btn-primary btn-lg" type="submit" value="Submit" />
+            </div>
+          </div>
+        </div>
+        <!--Form-->
+      </div>
+    </div>
+  </div>
+</div>
           <!--Carrusel-->
           <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
